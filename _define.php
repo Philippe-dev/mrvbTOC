@@ -5,7 +5,7 @@
  * @package Dotclear
  * @subpackage Plugins
  *
- * @author Mirovinben (http://www.mirovinben.fr/)
+ * @author Mirovinben (https://www.mirovinben.fr/)
  *
  * @copyright GPL-2.0 [https://www.gnu.org/licenses/gpl-2.0.html]
  */
@@ -22,7 +22,7 @@ $this->registerModule(
         'permissions' => 'usage,contentadmin',
         'type'        => 'plugin',
         'dc_min'      => '2.24',
-        'support'     => 'http://www.mirovinben.fr/blog/index.php?post/id3629',
-        'details'     => 'http://plugins.dotaddict.org/dc2/details/mrvbTOC',
+        'support'     => 'https://www.mirovinben.fr/blog/index.php?post/id3629',
+        'details'     => 'https://plugins.dotaddict.org/dc2/details/mrvbTOC',
     ]
 );

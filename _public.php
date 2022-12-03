@@ -5,7 +5,7 @@
  * @package Dotclear
  * @subpackage Plugins
  *
- * @author Mirovinben (http://www.mirovinben.fr/)
+ * @author Mirovinben (https://www.mirovinben.fr/)
  *
  * @copyright GPL-2.0 [https://www.gnu.org/licenses/gpl-2.0.html]
  */

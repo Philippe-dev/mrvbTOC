@@ -1,6 +1,6 @@
 # -------------------------------------
 # French translation of mrvbToC
-# © Mirovinben (http://www.mirovinben.fr/)
+# © Mirovinben (https://www.mirovinben.fr/)
 # -------------------------------------
 msgid ""
 msgstr ""
