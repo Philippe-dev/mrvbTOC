@@ -1,0 +1,49 @@
+# -- BEGIN LICENSE BLOCK ----------------------------------
+#
+# This file is part of mrvbToC, a plugin for Dotclear 2
+#
+# © Mirovinben (http://www.mirovinben.fr/)
+# Licensed under the GPL version 2.0 license.
+# See LICENSE file or
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+# -- END LICENSE BLOCK ------------------------------------
+
+sources	: Dsls : 'includesubcats'
+		: Matt - www.skyminds.net : 'jQuery Multiple Toggle Script'
+		: Franck : compatibilité avec base de données 'mysqli', 'mysql' et 'pgsql' 
+		: Gvx : compatibilité avec base de données 'pgsql' et 'sqlite' (si PHP >= 5.3.11 + extension 'intl')
+
+=============
+
+usages :
+	- permet d'afficher ou pas (par défaut) le nombre d'entrées de chaque liste
+	- prend en compte (par défaut) ou pas les entrées ayant un mot de passe
+	- permet d'afficher ou pas (par défaut) uniquement les entrées marquées comme visibles pour leur widget associé
+	- tri possible des entrées :
+		- date-asc      : par ordre chronologique des dates de publication (par défaut)
+		- date-desc     : par ordre antéchronologique des dates de publication
+		- title         : par ordre alphabétique croissant des titres des entrées
+
+	- permet d'afficher (par défaut) ou pas la liste des billets (on peut personnaliser le titre de la liste)
+	- prend en compte (par défaut) ou pas les billets sans catégories
+	- permet d'afficher ou pas (par défaut) la liste des pages créées avec le plugin "Pages" (on peut personnaliser le titre de la liste)
+	- permet de forcer ou pas (par défaut) l'affichage des pages selon leur position (ordre croissant)
+	- permet d'afficher ou pas (par défaut) la liste des pages statiques créées avec le plugin "Related Pages" (on peut personnaliser le titre de la liste)
+
+	- intégration d'un script permettant de montrer (picto par défaut ▼) et masquer (picto par défaut ▲) les entrées des listes
+	- options permettant l'activation ou pas (par défaut) du script pour les billets avec catégories, les pages et/ou les pages statiques
+
+CSS :
+	- ajoute au widget les classes "widget", "mrvbToC" et un classe personnalisable (facultative)
+	- la liste des billets est dans un <li class="posts">
+		- chaque catégorie est dans un <li class="category catXXX"> où XXX est l'id de la catégorie
+		- la liste des billets n'ayant pas de catégorie est dans un <li class="category title catNULL">
+	- la liste des pages est dans un <li class="pages">
+	- la liste des pages connexes est dans un <li class="static">
+	- le nombre de billets est dans un <span class="postcount">
+	- chaque billet listé est dans un <li class="item">
+	- chaque billet listé et ayant un mot de passe est dans un <li class="item password">
+	- dans le contexte d'affichage d'un billet, l'item correspondant à la catégorie du billet est dans un <li class="category catXXX category-current">
+	- le lien pour montrer les billets est dans un <span class="less"><a class="read-more"></span>
+	- le lien pour masquer les billets est dans un <span class="less"><a class="read-less"></span>

@@ -1,0 +1,90 @@
+# -------------------------------------
+# French translation of mrvbToC
+# © Mirovinben (http://www.mirovinben.fr/)
+# -------------------------------------
+msgid ""
+msgstr ""
+
+msgid "Mrvb: ToC"
+msgstr "Mrvb : ToC"
+
+msgid "Title (optional):"
+msgstr "Titre (optionnel) :"
+
+msgid "Table of Contents"
+msgstr "Table des matières"
+
+msgid "Display entries counts"
+msgstr "Afficher le nombre d\'entrées"
+
+msgid "Display only entries without password"
+msgstr "Afficher seulement les entrées sans mot de passe"
+
+msgid "Display only entries marked as visible to their widget"
+msgstr "Afficher seulement les entrées marquées comme visibles pour leur widget"
+
+msgid "Publication dates (in chronological order)"
+msgstr "Dates de publication (par ordre chronologique)"
+
+msgid "Publication dates (in reverse chronological order)"
+msgstr "Dates de publication (par ordre antéchronologique)"
+
+msgid "Titles (in alphabetical order)"
+msgstr "Titres (par ordre alphabétique)"
+
+msgid "Title of the posts list:"
+msgstr "Titre de la liste des billets&nbsp;:"
+
+msgid "List of posts"
+msgstr "Liste des billets"
+
+msgid "Display the posts"
+msgstr "Afficher les billets"
+
+msgid "Display only the posts with categories"
+msgstr "Afficher seulement les billets avec catégories"
+
+msgid "Activate script \"hide/show\" for the posts with categories"
+msgstr "Activer le script \"cacher/montrer\" pour les billets avec catégories"
+
+msgid "Title of the pages list:"
+msgstr "Titre de la liste des pages&nbsp;:"
+
+msgid "List of pages"
+msgstr "Liste des pages"
+
+msgid "Display the pages"
+msgstr "Afficher les pages"
+
+msgid "Force display in ascending order of pages's positions"
+msgstr "Forcer l'affichage par ordre croissant des positions de pages"
+
+msgid "Activate script \"hide/show\" for the pages"
+msgstr "Activer le script \"cacher/montrer\" pour les pages"
+
+msgid "Title of the statics pages list:"
+msgstr "Titre de la liste des pages statiques&nbsp;:"
+
+msgid "List of statics pages"
+msgstr "Liste des pages statiques"
+
+msgid "Display the statics pages"
+msgstr "Afficher les pages statiques"
+
+msgid "Activate script \"hide/show\" for the static pages"
+msgstr "Activer le script \"cacher/montrer\" pour les pages statiques"
+
+msgid "Link text used by the script to show (empty = ▼):"
+msgstr "Texte du lien utilisé par le script pour montrer (vide = ▼)&nbsp;:"
+
+msgid "Link text used by the script to hide (empty = ▲):"
+msgstr "Texte du lien utilisé par le script pour cacher (vide = ▲)&nbsp;:"
+
+msgid "List of posts"
+msgstr "Liste des billets"
+
+msgid "List of pages"
+msgstr "Liste des pages"
+
+msgid "List of static pages"
+msgstr "Liste des pages statiques"
