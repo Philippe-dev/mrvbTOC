@@ -16,7 +16,7 @@ if (!defined('DC_RC_PATH')) {
 $this->registerModule(
     'mrvbToC',
     'Mrvb Table of Contents',
-    'Mirovinben',
+    'Mirovinben and contributors',
     '0.4',
     [
         'permissions' => 'usage,contentadmin',
