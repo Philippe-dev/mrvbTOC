@@ -21,7 +21,7 @@ $this->registerModule(
     [
         'permissions' => 'usage,contentadmin',
         'type'        => 'plugin',
-        'dc_min'      => '2.7',
+        'dc_min'      => '2.24',
         'support'     => 'http://www.mirovinben.fr/blog/index.php?post/id3629',
         'details'     => 'http://plugins.dotaddict.org/dc2/details/mrvbTOC',
     ]
