@@ -58,9 +58,10 @@ class tplmrvbToC
         if ($w->offline) {
             return;
         }
-        if (($w->homeonly == 1 && dcCore::app()->url->type != 'default') || ($w->homeonly == 2 && dcCore::app()->url->type == 'default')) {
-            return;
+        if (!$w->checkHomeOnly(dcCore::app()->url->type)) {
+            return '';
         }
+        
         $max_level = 65535;
         $level     = 0;
         $ref_level = $level;

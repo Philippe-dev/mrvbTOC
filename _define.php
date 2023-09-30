@@ -17,7 +17,7 @@ $this->registerModule(
     'mrvbToC',
     'Mrvb Table of Contents',
     'Mirovinben and contributors',
-    '0.4',
+    '0.4.1',
     [
         'permissions' => 'usage,contentadmin',
         'type'        => 'plugin',

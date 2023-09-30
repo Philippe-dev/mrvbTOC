@@ -133,34 +133,9 @@ class mrvbToCBehaviors
             '',
             'text'
         );
-        $w->mrvbToC->setting(
-            'homeonly',
-            __('Display on:'),
-            0,
-            'combo',
-            [
-                __('All pages')           => 0,
-                __('Home page only')      => 1,
-                __('Except on home page') => 2,
-            ]
-        );
-        $w->mrvbToC->setting(
-            'content_only',
-            __('Content only'),
-            0,
-            'check'
-        );
-        $w->mrvbToC->setting(
-            'CSSclass',
-            __('CSS class:'),
-            '',
-            'text'
-        );
-        $w->mrvbToC->setting(
-            'offline',
-            __('Offline'),
-            0,
-            'check'
-        );
+        $w->mrvbToC->addHomeOnly();
+        $w->mrvbToC->addContentOnly();
+        $w->mrvbToC->addClass();
+        $w->mrvbToC->addOffline();
     }
 }
