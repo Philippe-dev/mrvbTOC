@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * @brief mrvbToC, a plugin for Dotclear 2
  *
  * @package Dotclear
@@ -7,21 +7,19 @@
  *
  * @author Mirovinben (https://www.mirovinben.fr/)
  *
- * @copyright GPL-2.0 [https://www.gnu.org/licenses/gpl-2.0.html]
+ * @copyright AGPL-3.0
  */
-if (!defined('DC_RC_PATH')) {
-    return;
-}
 
 $this->registerModule(
     'mrvbToC',
-    'Mrvb Table of Contents',
+    'Table of Contents',
     'Mirovinben and contributors',
-    '0.4.1',
+    '0.5',
     [
-        'permissions' => 'usage,contentadmin',
+        'date'        => '2025-08-11T00:00:17+0100',
+        'permissions' => 'My',
         'type'        => 'plugin',
-        'dc_min'      => '2.24',
+        'dc_min'      => '2.34',
         'support'     => 'https://www.mirovinben.fr/blog/index.php?post/id3629',
         'details'     => 'https://plugins.dotaddict.org/dc2/details/mrvbTOC',
     ]

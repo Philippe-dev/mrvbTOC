@@ -5,6 +5,9 @@
 msgid ""
 msgstr ""
 
+msgid "Display a list of entries including posts, pages and included pages)"
+msgstr "Affiche la liste des entrées (billets, pages et pages incluses)"
+
 msgid "Mrvb: ToC"
 msgstr "Mrvb : ToC"
 
