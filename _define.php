@@ -14,12 +14,12 @@ $this->registerModule(
     'mrvbToC',
     'Table of Contents',
     'Mirovinben and contributors',
-    '0.5',
+    '0.6',
     [
-        'date'        => '2025-08-11T00:00:17+0100',
+        'date'        => '2025-09-08T00:00:08+0100',
+        'requires'    => [['core', '2.36']],
         'permissions' => 'My',
         'type'        => 'plugin',
-        'dc_min'      => '2.34',
         'support'     => 'https://www.mirovinben.fr/blog/index.php?post/id3629',
         'details'     => 'https://plugins.dotaddict.org/dc2/details/mrvbTOC',
     ]
