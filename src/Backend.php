@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace Dotclear\Plugin\mrvbTOC;
 
-use Dotclear\Helper\Process\TraitProcess;
 use Dotclear\App;
+use Dotclear\Helper\Process\TraitProcess;
 
 class Backend
 {

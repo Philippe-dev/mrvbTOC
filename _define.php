@@ -14,9 +14,9 @@ $this->registerModule(
     'mrvbToC',
     'Table of Contents',
     'Mirovinben and contributors',
-    '0.6',
+    '0.7',
     [
-        'date'        => '2025-09-08T00:00:08+0100',
+        'date'        => '2025-10-01T00:00:08+0100',
         'requires'    => [['core', '2.36']],
         'permissions' => 'My',
         'type'        => 'plugin',

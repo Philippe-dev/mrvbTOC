@@ -15,7 +15,6 @@ namespace Dotclear\Plugin\mrvbTOC;
 
 use Dotclear\App;
 use Dotclear\Helper\Process\TraitProcess;
-use Dotclear\Helper\L10n;
 
 class Frontend
 {
@@ -36,7 +35,7 @@ class Frontend
         App::behavior()->addBehavior('publicFooterContent', [self::class,  'publicFooterContent']);
         App::behavior()->addBehavior('initWidgets', [Widgets::class, 'initWidgets']);
 
-        L10n::set(dirname(__FILE__) . '/locales/' . App::lang()->getLang() . '/main');
+        App::lang()->set(dirname(__FILE__) . '/locales/' . App::lang()->getLang() . '/main');
 
         return true;
     }
