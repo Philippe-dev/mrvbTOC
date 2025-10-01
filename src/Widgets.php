@@ -177,13 +177,13 @@ class Widgets
         if (DC_DBDRIVER == 'mysqli' || DC_DBDRIVER == 'mysql') {
             $collate = ' ORDER BY P.post_title COLLATE utf8_unicode_ci ';
         } elseif (DC_DBDRIVER == 'pgsql') {
-            $_rs = App::con()->select("SELECT * FROM pg_collation WHERE (collcollate LIKE '%.utf8')");
+            $_rs = App::db()->con()->select("SELECT * FROM pg_collation WHERE (collcollate LIKE '%.utf8')");
             if (!$_rs->isEmpty()) {
                 $collate = ' ORDER BY P.post_title COLLATE "' . $_rs->f('collname') . '" ';
             }
-        } elseif (DC_DBDRIVER == 'sqlite' && class_exists('Collator') && method_exists(App::con()->link(), 'sqliteCreateCollation')) {
+        } elseif (DC_DBDRIVER == 'sqlite' && class_exists('Collator') && method_exists(App::db()->con()->link(), 'sqliteCreateCollation')) {
             $utf8_unicode_ci = new Collator('root');
-            if (App::con()->link()->sqliteCreateCollation('utf8_unicode_ci', [$utf8_unicode_ci,'compare'])) {
+            if (App::db()->con()->link()->sqliteCreateCollation('utf8_unicode_ci', [$utf8_unicode_ci,'compare'])) {
                 $collate = ' ORDER BY P.post_title COLLATE utf8_unicode_ci ';
             }
         }
@@ -208,7 +208,7 @@ class Widgets
                 $query .= ' AND (P.post_password IS NULL)';
             }
             $query .= $sort;
-            $res_post = App::con()->select($query);
+            $res_post = App::db()->con()->select($query);
             if ($res_post->count() > 0) {
                 $res .= '<ul>' . "\n" . '<li class="posts">' . $posts;
                 if ($widgets->count) {
@@ -221,7 +221,7 @@ class Widgets
                         $query .= ' AND (P.post_password IS NULL)';
                     }
                     $query .= $sort;
-                    $res_post = App::con()->select($query);
+                    $res_post = App::db()->con()->select($query);
                     if ($res_post->count() > 0) {
                         $res .= "\n" . '<ul>' . "\n";
                         while ($res_post->fetch()) {
@@ -265,7 +265,7 @@ class Widgets
                                 $query .= ' AND (P.post_password IS NULL)';
                             }
                             $query .= $sort;
-                            $res_post = App::con()->select($query);
+                            $res_post = App::db()->con()->select($query);
                             if ($res_post->count() > 0) {
                                 if ($widgets->hideposts) {
                                     $res .= '<span class="less"><a class="read-more" href="#read">' . $more . '</a><a class="read-less" href="#read">' . $less . '</a></span>' . "\n" . '<div class="more">' . "\n";
@@ -305,7 +305,7 @@ class Widgets
             } else {
                 $query .= $sort;
             }
-            $res_post = App::con()->select($query);
+            $res_post = App::db()->con()->select($query);
             if ($res_post->count() > 0) {
                 $res .= '<ul>' . "\n" . '<li class="pages">' . $pages;
                 if ($widgets->count) {
@@ -337,7 +337,7 @@ class Widgets
                 $query .= ' AND (P.post_selected > 0)';
             }
             $query .= $sort;
-            $res_post = App::con()->select($query);
+            $res_post = App::db()->con()->select($query);
             if ($res_post->count() > 0) {
                 $res .= '<ul>' . "\n" . '<li class="static">' . $statics;
                 if ($widgets->count) {
